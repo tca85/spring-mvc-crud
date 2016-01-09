@@ -14,15 +14,15 @@ public class CreateController {
 	//---------------------------------------------------------------------------------------------
 	/**
 	 * This method is called based on URL that user typed on the browser
-	 * and return the html page name (CreateBill.html)
+	 * and return the html page name (BillCreate.html)
 	 * 
-	 * http://localhost:8080/create/bill
+	 * http://localhost:8080/bill/create
 	 * 
 	 * @return
 	 */
-	@RequestMapping("create/bill")
+	@RequestMapping("bill/create")
 	public String create(){	
-		return "CreateBill";
+		return "BillCreate";
 	}
 	
 	//---------------------------------------------------------------------------------------------
