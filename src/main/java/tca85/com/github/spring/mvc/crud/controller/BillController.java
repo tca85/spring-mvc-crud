@@ -2,6 +2,9 @@ package tca85.com.github.spring.mvc.crud.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import tca85.com.github.spring.mvc.crud.model.Bill;
 
 /**
  * 
@@ -9,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  *
  */
 @Controller
+@RequestMapping("bill")
 public class BillController {
 
 	//---------------------------------------------------------------------------------------------
@@ -20,11 +24,24 @@ public class BillController {
 	 * 
 	 * @return
 	 */
-	@RequestMapping("bill/create")
+	@RequestMapping("/create")
 	public String create(){	
 		return "BillCreate";
 	}
 	
 	//---------------------------------------------------------------------------------------------
 
+	/**
+	 * If user make a post webmethod to "bill", it's going to save at database
+	 * @param bill
+	 * @return
+	 */
+	@RequestMapping(method = RequestMethod.POST)
+	public String save(Bill bill){
+		System.out.println(bill.toString());
+		
+		return "BillCreate";
+	}
+	
+	//---------------------------------------------------------------------------------------------
 }

@@ -29,12 +29,13 @@ public class Bill {
 	@Temporal(TemporalType.DATE)
 	private Date expirationdate;
 	
-	
-	private BigDecimal valor;
+	private BigDecimal value;
 	
 	@Enumerated(EnumType.STRING)
 	private BillStatus status;
 
+	//---------------------------------------------------------------------------------------------
+	// Getters & Setters
 	public long getCode() {
 		return code;
 	}
@@ -59,12 +60,12 @@ public class Bill {
 		this.expirationdate = expirationdate;
 	}
 
-	public BigDecimal getValor() {
-		return valor;
+	public BigDecimal getValue() {
+		return value;
 	}
 
-	public void setValor(BigDecimal valor) {
-		this.valor = valor;
+	public void setValue(BigDecimal value) {
+		this.value = value;
 	}
 
 	public BillStatus getStatus() {
@@ -74,6 +75,8 @@ public class Bill {
 	public void setStatus(BillStatus status) {
 		this.status = status;
 	}
+	
+	//---------------------------------------------------------------------------------------------
 
 	/**
 	 * CTR3 + 3, ghc
@@ -101,4 +104,10 @@ public class Bill {
 		return true;
 	}
 	
+	//---------------------------------------------------------------------------------------------
+	@Override
+	public String toString() {
+		return this.description + this.expirationdate + this.status + this.value;
+	}
+	//---------------------------------------------------------------------------------------------	
 }
