@@ -1,3 +1,8 @@
-.navbar-brand{
-	padding-top: 12px;
+.navbar-brand {
+	padding-top: 20px;
+}
+
+.panel-default {
+	margin-left: 15px;
+	margin-right: 15px;
 }
