@@ -7,3 +7,7 @@ CRUD example with Spring MVC using Spring Tool Suite 3.7.2
 - MySQL
 - Thymeleaf
 - Tomcat (could be Glassfish or Wildfly)
+
+-------------
+Project not finished
+
