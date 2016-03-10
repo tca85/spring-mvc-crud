@@ -15,6 +15,9 @@ import javax.persistence.TemporalType;
 /**
  * 
  * @author tca85
+ * 
+ * test using Orion Hub
+ * 
  *
  */
 @Entity
